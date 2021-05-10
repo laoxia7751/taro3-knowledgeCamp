@@ -9,6 +9,7 @@ import {
   ScrollView
 } from "@tarojs/components";
 import { AtButton } from "taro-ui";
+import ArticleItem from '@/components/articleItem'
 
 import "taro-ui/dist/style/components/button.scss"; // 按需引入
 import "./index.scss";
@@ -182,7 +183,8 @@ export default class Index extends Component {
           })}
         </ScrollView>
         {/* 分类文章 */}
-        <ScrollView scrollY scrollWithAnimation onScrollToUpper={this.updateList} onScrollToLower={this.handleScrollBottom}></ScrollView>
+        <ArticleItem/>
+        {/* <ScrollView scrollY scrollWithAnimation onScrollToUpper={this.updateList} onScrollToLower={this.handleScrollBottom}></ScrollView> */}
       </View>
     );
   }

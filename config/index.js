@@ -1,3 +1,5 @@
+import path from 'path';
+
 const config = {
   projectName: 'knowledgeCamp',
   date: '2021-5-10',
@@ -11,6 +13,10 @@ const config = {
   outputRoot: 'dist',
   plugins: [],
   defineConstants: {
+  },
+  alias:{
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
   },
   copy: {
     patterns: [
