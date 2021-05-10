@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "knowledgeCamp",
+  "description": "干货集中营",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
